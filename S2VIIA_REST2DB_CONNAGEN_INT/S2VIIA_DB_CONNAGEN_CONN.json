@@ -1,0 +1,171 @@
+{
+  "links": {
+    "@rel": "self",
+    "@href": "https://dmrics-audrconsul.integration.us2.oraclecloud.com:443/icsapis/v1/connections/S2VIIA_DB_CONNAGEN_CONN"
+  },
+  "connectionproperties": [
+    {
+      "displayName": "Host",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Host",
+      "propertyType": "STRING",
+      "propertyValue": "localhost",
+      "required": "true"
+    },
+    {
+      "displayName": "Port",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "Port",
+      "propertyType": "STRING",
+      "propertyValue": "1521",
+      "required": "true"
+    },
+    {
+      "displayName": "SID",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "SID",
+      "propertyType": "STRING",
+      "propertyValue": "orcl",
+      "required": "false"
+    },
+    {
+      "displayName": "Service Name",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyGroup": "CONNECTION_PROPS",
+      "propertyName": "ServiceName",
+      "propertyType": "STRING",
+      "required": "false"
+    }
+  ],
+  "securityproperties": [
+    {
+      "displayName": "Username",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyDescription": "A username credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "username",
+      "propertyType": "STRING",
+      "propertyValue": "evaluator",
+      "required": "true"
+    },
+    {
+      "displayName": "Password",
+      "hasAttachment": "false",
+      "hidden": "false",
+      "length": "0",
+      "propertyDescription": "A password credential",
+      "propertyGroup": "CREDENTIALS",
+      "propertyName": "password",
+      "propertyType": "PASSWORD",
+      "propertyValue": "welcome1",
+      "required": "true"
+    }
+  ],
+  "adaptertype": {
+    "appTypeConnProperties": [
+      {
+        "displayName": "Host",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyGroup": "CONNECTION_PROPS",
+        "propertyName": "Host",
+        "propertyType": "STRING",
+        "required": "true"
+      },
+      {
+        "displayName": "Port",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyGroup": "CONNECTION_PROPS",
+        "propertyName": "Port",
+        "propertyType": "STRING",
+        "required": "true"
+      },
+      {
+        "displayName": "SID",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyGroup": "CONNECTION_PROPS",
+        "propertyName": "SID",
+        "propertyType": "STRING",
+        "required": "false"
+      },
+      {
+        "displayName": "Service Name",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyGroup": "CONNECTION_PROPS",
+        "propertyName": "ServiceName",
+        "propertyType": "STRING",
+        "required": "false"
+      }
+    ],
+    "appTypeCredProperties": [
+      {
+        "displayName": "Username",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyDescription": "A username credential",
+        "propertyGroup": "CREDENTIALS",
+        "propertyName": "username",
+        "propertyType": "STRING",
+        "required": "true"
+      },
+      {
+        "displayName": "Password",
+        "hasAttachment": "false",
+        "hidden": "false",
+        "length": "0",
+        "propertyDescription": "A password credential",
+        "propertyGroup": "CREDENTIALS",
+        "propertyName": "password",
+        "propertyType": "PASSWORD",
+        "required": "true"
+      }
+    ],
+    "appTypeLargeIconUrl": "/images/database/db_92.png",
+    "appTypeMediumGrayIconUrl": "/images/database/db_g_46.png",
+    "appTypeMediumIconUrl": "/images/database/db_46.png",
+    "appTypeMediumWhiteIconUrl": "/images/database/db_w_46.png",
+    "appTypeName": "database",
+    "appTypeSmallIconUrl": "/images/database/db_32.png",
+    "displayName": "Oracle Database",
+    "features": "",
+    "source": "PREINSTALLED",
+    "supportedSecurityPolicies": "Username Password Token",
+    "usage": "0",
+    "vedorInfo": {
+      "name": "Oracle Corporation",
+      "description": "https://www.oracle.com/about",
+      "contactUS": "http://www.oracle.com/us/corporate/contact/index.html",
+      "supportURL": "http://otn.oracle.com",
+      "documentationURL": "https://docs.oracle.com/cloud/latest/intcs_gs/index.html",
+      "releaseNotes": "Oracle Database adapter enables easy integration with Oracle Database."
+    }
+  },
+  "code": "S2VIIA_DB_CONNAGEN_CONN",
+  "imageURL": "/images/database/db_32.png",
+  "name": "S2VIIA_DB_CONNAGENT_CONN",
+  "percentageComplete": "100",
+  "securityPolicy": "USERNAME_PASSWORD_TOKEN",
+  "status": "CONFIGURED",
+  "supportsCache": "true"
+}

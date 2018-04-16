@@ -1,0 +1,16 @@
+#	Integration:
+
+export ICS_INTEGRATION_IAR_FILENAME="S2VIIA_REST2DB_CONNAGEN_INT.iar"
+export ICS_INTEGRATION_POST_IMPORT_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/integrations/import"
+export ICS_INTEGRATION_POST_ACTIVATE_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/integrations/S2VIIA_REST2DB_CONNAGEN_INT/01.00.0000/activate"
+
+#	Connector: DB Connector:
+
+export ICS_CONNECTOR_DB_CONFIG_NAME="S2VIIA_DB_CONNAGEN_CONN.json"
+export ICS_CONNECTOR_DB_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/connections/S2VIIA_DB_CONNAGEN_CONN"
+
+
+#	Connector: REST:
+
+export ICS_CONNECTOR_REST_CONFIG_NAME="S2VIIA_REST_CONN.json"
+export ICS_CONNECTOR_REST_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/connections/S2VIIA_REST_CONN"

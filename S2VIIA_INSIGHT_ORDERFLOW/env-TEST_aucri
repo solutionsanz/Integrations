@@ -1,0 +1,16 @@
+#	Integration:
+
+export ICS_INTEGRATION_IAR_FILENAME="S2VIIA_INSIGHT_ORDERFLOW.iar"
+export ICS_INTEGRATION_POST_IMPORT_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/integrations/import"
+export ICS_INTEGRATION_POST_ACTIVATE_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/integrations/S2VIIA_INSIGHT_ORDERFLOW/01.00.0000/activate"
+
+#	Connector: Sales Cloud:
+
+export ICS_CONNECTOR_SC_CONFIG_NAME="S2VIIA_SALESCLOUD_CONN1.json"
+export ICS_CONNECTOR_SC_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/connections/S2VIIA_SALESCLOUD_CONN1"
+
+
+#	Connector: REST:
+
+export ICS_CONNECTOR_REST_CONFIG_NAME="S2VIIA_REST_CONN.json"
+export ICS_CONNECTOR_REST_URI="https://ics-aucri.integration.us2.oraclecloud.com/icsapis/v1/connections/S2VIIA_REST_CONN"
