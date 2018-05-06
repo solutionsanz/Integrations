@@ -6,7 +6,7 @@ export ICS_INTEGRATION_ENV='PROD_Castle'
 
 cd ${ICS_INTEGRATION_NAME}
 
-chmod 755 env-${ICS_INTEGRATION_ENV}
+chmod 755 env-${ICS_INTEGRATION_ENV}.properties
 
 source ./env-${ICS_INTEGRATION_ENV}.properties
 
