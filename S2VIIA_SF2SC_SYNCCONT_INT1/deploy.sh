@@ -1,20 +1,22 @@
 #set -x
 
 # 1. We are going to set our environmental properties, by sourcing the env-[DEV|TEST|PROD] file that you wish to use.
-#export ICS_INTEGRATION_ENV='TEST_aucri'
-#export ICS_INTEGRATION_NAME='S2VIIA_SC_GETCONTA_INT'
-#export ICS_USERNAME='carlos_priscila@bigpond.com'
-#export ICS_PASSWD=''
+
+export ICS_INTEGRATION_ENV='PROD_Castle'
 
 cd ${ICS_INTEGRATION_NAME}
 
 chmod 755 env-${ICS_INTEGRATION_ENV}
 
-source ./env-${ICS_INTEGRATION_ENV}
+source ./env-${ICS_INTEGRATION_ENV}.properties
 
-# 2. Package the ICS Integration "package" as an IAR integration archive . We are going to use jar for this.
+# 2. Build and Configure the IAR integration archive.
 
+# Keeping the original IAR in GIT repo/artifactory, until until we find value on expanding it.
 #jar cvf ${ICS_INTEGRATION_IAR_FILENAME} icspackage
+
+# Setup Connectors with environment variables
+./setupConnectors.sh
 
 
 # 3. Import the ICS Integration archive (IAR)
@@ -34,10 +36,10 @@ curl -u "${ICS_USERNAME}:${ICS_PASSWD}" -H "Content-Type:application/json" -X PU
 # Sleep 5 seconds to give time to complete before configuring the next adapter.
 sleep 5
 
-#	4.2 REST Connector
+#	4.2 Salesforce Connector
 
-# Configure REST Connector, in this case I just want to force Test it, so it gets activated:
-curl -u "${ICS_USERNAME}:${ICS_PASSWD}" -H "Content-Type:application/json" -X PUT -d @${ICS_CONNECTOR_REST_CONFIG_NAME} ${ICS_CONNECTOR_REST_URI} -v
+# Configure Salesforce Connector:
+curl -u "${ICS_USERNAME}:${ICS_PASSWD}" -H "Content-Type:application/json" -X PUT -d @${ICS_CONNECTOR_SF_CONFIG_NAME} ${ICS_CONNECTOR_SF_URI} -v
 
 # Sleep 5 seconds to give time to complete before Activating the ICS Integration.
 sleep 5

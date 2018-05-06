@@ -1,7 +1,7 @@
 {
   "links": {
     "@rel": "self",
-    "@href": "https://ics-crisoacsjan17.integration.us2.oraclecloud.com:443/icsapis/v1/connections/S2VIIA_SALESCLOUD_CONN1"
+    "@href": "@ICS_CONNECTOR_SC_URI@"
   },
   "connectionproperties": [
     {
@@ -14,7 +14,7 @@
       "propertyName": "targetWSDLURL",
       "propertyShortDesc": "The service catalog service WSDL is required to configure the adapter for both inbound and outbound endpoints using either business objects or business services.",
       "propertyType": "WSDL_URL",
-      "propertyValue": "https://ucf3-fap2097-fs.oracledemos.com/fndAppCoreServices/ServiceCatalogService?wsdl",
+      "propertyValue": "@ICS_CONNECTOR_SC_OSC_SERVICE_CATALOG_WSDL_URL@",
       "required": "true"
     },
     {
@@ -27,7 +27,7 @@
       "propertyName": "eventCatalogURL",
       "propertyShortDesc": "The event catalog URL is required for configuring the inbound adapter for event subscriptions.",
       "propertyType": "URL",
-      "propertyValue": "https://ucf3-fap2097-crm.oracledemos.com/soa-infra",
+      "propertyValue": "@ICS_CONNECTOR_SC_OSC_EVENTS_CATALOG_WSDL_URL@",
       "required": "false"
     },
     {
@@ -53,7 +53,7 @@
       "propertyGroup": "CREDENTIALS",
       "propertyName": "username",
       "propertyType": "STRING",
-      "propertyValue": "demofaadmin",
+      "propertyValue": "@ICS_CONNECTOR_SC_USERNAME@",
       "required": "true"
     },
     {
@@ -65,7 +65,7 @@
       "propertyGroup": "CREDENTIALS",
       "propertyName": "password",
       "propertyType": "PASSWORD",
-      "propertyValue": "Wxe38839",
+      "propertyValue": "@ICS_CONNECTOR_SC_PASSWORD@",
       "required": "true"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "links": {
     "@rel": "self",
-    "@href": "https://ics-aucri.integration.us2.oraclecloud.com:443/icsapis/v1/connections/S2VIIA_SALESFORCE_CONN1"
+    "@href": "@ICS_CONNECTOR_SF_URI@"
   },
   "connectionproperties": {
     "displayName": "Enterprise WSDL Location",
@@ -23,7 +23,7 @@
       "propertyGroup": "CREDENTIALS",
       "propertyName": "username",
       "propertyType": "STRING",
-      "propertyValue": "devgregoryorigami@gmail.com",
+      "propertyValue": "@ICS_CONNECTOR_SF_USERNAME@",
       "required": "true"
     },
     {
@@ -34,7 +34,7 @@
       "propertyGroup": "CREDENTIALS",
       "propertyName": "password",
       "propertyType": "PASSWORD",
-      "propertyValue": "origamiman15WRKFkn8eYOPeI757OzhVHs0V",
+      "propertyValue": "@ICS_CONNECTOR_SF_PASSWORD@",
       "required": "true"
     }
   ],
